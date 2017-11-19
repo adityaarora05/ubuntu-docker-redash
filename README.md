@@ -9,4 +9,4 @@ Now, if you have a local machine which does not have Ubuntu, Docker is one of th
 
 Following, is the link to my blog, where I have provided details instructions for the same. Have a look, and feel free to let me know in case issues arise.
 
-<a href="https://www.concurrenthashmap.com/blog/2017/10/18/setup-data-analytics-visualization-tool-redash-for-docker/">Redash on Docker</a>
+Redash on Docker(https://www.concurrenthashmap.com/blog/2017/10/18/setup-data-analytics-visualization-tool-redash-for-docker/)
