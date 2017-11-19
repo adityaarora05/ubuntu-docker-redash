@@ -1,0 +1,5 @@
+### Build the image
+docker build -f docker-redash -t redash:latest .
+
+### Create docker container from image
+docker run -d --name redash -p 9876:80 -p 3306:3306 redash /bin/bash

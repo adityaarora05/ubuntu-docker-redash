@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+
+MAINTAINER adityaarora05@hotmail.com
+
+RUN apt-get -y update && apt-get -y upgrade && apt-get -y install sudo vim wget postgresql redis-server nginx supervisor net-tools iputils-ping && wget -O bootstrap.sh "https://raw.githubusercontent.com/getredash/redash/master/setup/ubuntu/bootstrap.sh" && chmod 777 bootstrap.sh && service postgresql start && service redis-server start && service nginx start && ./bootstrap.sh
+
+COPY supervisor.sh /supervisor.sh
+RUN chmod 777 /supervisor.sh
+
+ENTRYPOINT ["/bin/bash", "-c", "./supervisor.sh"]
